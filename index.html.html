@@ -1,0 +1,19 @@
+<!DOCTYPE>
+<html>
+	<head>
+	   <title> Javascript Project </title>	
+	</head>	
+	<body>	
+		<h1 style="text-align:center;"> Turn the the light on or off by clicking on the bulb</h1>		
+		<img id ="lightbulb" onclick ="bulbSwitch()" src = "lightoff.jpg "  width ="350"  height =" 470" style="margin-left:320px;margin-top:50px;">			
+		<script>		
+			function bulbSwitch() {			
+				var bulb =document.getElementById("lightbulb");				
+				if (bulb.src.match("lighton")) {
+					bulb.src ="lightoff.jpg";				
+				} else {				
+					bulb.src ="lighton.jpg";}								
+				}							
+		</script>		
+	</body>
+</html>
